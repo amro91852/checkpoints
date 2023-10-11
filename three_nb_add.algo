@@ -1,0 +1,32 @@
+ALGORITHM three_nb_add
+VAR
+    
+    noofwords:INTEGER:=0;
+    nofvowel:INTEGER:=0;
+    nofchars:INTEGER:=0;
+    count:INTEGER:=0;
+    sentence:"hello world !";
+    
+BEGIN
+    read(sentence)
+    WHILE (count<sentence.length) DO
+    count;=count+1
+
+    IF (sentence=" ") THEN    
+        noofwords:=noofwords+1
+    END_IF
+
+    IF (sentence = "a" or "e" or "i" or "o" or "u") THEN
+        nofvowel:=nofvowel+1
+    END_IF
+    
+    
+    
+    
+
+END_WHILE
+
+    write(nofchars)
+    write(nofvowel)
+    write(noofwords)
+END
